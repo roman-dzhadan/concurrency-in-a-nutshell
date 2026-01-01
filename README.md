@@ -1,9 +1,9 @@
 # Disclaimer:
 
-- Everything I will say and show today are my personal opinions
-- I'm not pretending to be the carrier of an absolute truth
-- This is how I observe things based on my personal experience
-- Let me share my mental model with you
+- Everything I say and show today reflects my personal opinions.
+- I do not claim to hold the absolute truth.
+- These views are based on my personal experience and observations.
+- I would like to share my mental model of the subject with you.
 
 # Entrypoint:
 
