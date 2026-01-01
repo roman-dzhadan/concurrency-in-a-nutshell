@@ -22,7 +22,7 @@ git clone git@github.com:roman-dzhadan/concurrency-in-a-nutshell.git /tmp/concur
 # Set Strict Boundaries:
 
 - What is the **"concurrency"** and what is the **"parallelism"**?
-    * ["Concurrency is not Parallelism" - an insightful talk by "Rob Pike" at "Waza 2012".](https://youtu.be/oV9rvDllKEg)
+    * ["Concurrency is not Parallelism" - an insightful 30-mins long talk by "Rob Pike" at "Waza 2012".](https://youtu.be/oV9rvDllKEg)
 
 - Why does this talk worth to be watched?
     * **Fact A:** Go was designed at Google in 2007 by Robert Griesemer, Rob Pike, and Ken Thompson, and publicly announced in November 2009.
