@@ -1,8 +1,8 @@
 # Entrypoint
 
 ```
-cd ~ && pwd
-git clone git@github.com:roman-dzhadan/concurrency-in-a-nutshell.git /tmp/concurrency-in-a-nutshell
+rm -rf /tmp/concurrency-in-a-nutshell && cd ~ && pwd
+git clone git@github.com:roman-dzhadan/concurrency-in-a-nutshell.git /tmp/concurrency-in-a-nutshell/
 ```
 
 # Bold Statements:
