@@ -1,16 +1,3 @@
-# Q.: What is the "concurrency"? What is the "parallelism"?
-
-## A.: ["Concurrency is not Parallelism" insightful talk by "Rob Pike" at "Waza 2012"](https://youtu.be/oV9rvDllKEg)
-
-Why is worth to watch it?
-
-- Go was designed at Google in 2007 by Robert Griesemer, Rob Pike, and Ken Thompson, and publicly announced in November 2009
-- Go is relatively young programming language and had privilege to not repeat mistakes of it's predecessors
-- Rob Pike was one of the main inventors of Go, and he is the speaker of the talk I'm recommending to watch
-- Go has first-class support for concurrency through goroutines and channels
-- Goroutines are lightweight threads managed by the Go runtime, allowing millions of concurrent tasks with minimal overhead
-- Go shines in high-performance backends by efficiently utilizing hardware resources, especially the CPU
-
 # Thoughts & Statements:
 
 - Universe/Reality is not object-oriented, it's parallel

@@ -19,6 +19,17 @@ git clone git@github.com:roman-dzhadan/concurrency-in-a-nutshell.git /tmp/concur
 - **Statement 3:** Reactive programming in Java is a spectacularly mesmerizing piece of shit.
 - **P.S.:** Feel free to quote me on these three statements.
 
+# Prerequisite: What is the "concurrency"? What is the "parallelism"?
+
+- ["Concurrency is not Parallelism" insightful talk by "Rob Pike" at "Waza 2012"](https://youtu.be/oV9rvDllKEg)
+
+- Why is worth to watch it?
+  a. Go was designed at Google in 2007 by Robert Griesemer, Rob Pike, and Ken Thompson, and publicly announced in November 2009
+  b. Go is relatively young programming language and had privilege to not repeat mistakes of its predecessors
+  c. Rob Pike was one of the main inventors of Go, and he is the speaker of the talk I'm recommending to watch
+  d. Go has first-class support for concurrency through goroutines and channels
+  e. Goroutines are lightweight threads managed by the Go runtime, allowing millions of concurrent tasks with minimal overhead
+  f. Go shines in high-performance backends by efficiently utilizing hardware resources, especially the CPU
 
 # Introduction:
 
