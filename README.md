@@ -5,10 +5,18 @@ rm -rf /tmp/concurrency-in-a-nutshell && cd ~ && pwd
 git clone git@github.com:roman-dzhadan/concurrency-in-a-nutshell.git /tmp/concurrency-in-a-nutshell/
 ```
 
+# Disclaimer:
+
+- Everything I will say and show today are my personal opinions
+- I'm not pretending to be the carrier of an absolute truth
+- This is how I observe things based on my personal experience
+- Let me share my mental model with you
+
 # Bold Statements:
 
 - Statement 1: Java is essentially syntactic sugar over C
 - Statement 2: Python is another form of syntactic sugar over C
+- Statement 3: Reactive programming in Java is a spectacularly mesmerizing piece of shit
 
 # Introduction:
 
