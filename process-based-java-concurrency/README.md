@@ -22,3 +22,11 @@ strace -f -p XXXX -e trace=execvp,execle,execve,vfork,fork,clone
 strace -f -p XXXX -e trace=execle,execve,vfork,fork,clone
 strace -f -p XXXX -e trace=execve,vfork,fork,clone
 ```
+
+# What is the morale?
+
+- Don't be a dinosaur. Keep learning. Be open-minded. Be curious. Stay up-to-date.
+- Long time ago, process-based concurrency was aggressively & massively replaced with kernel-thread-based concurrency.
+- In Java/JVM terms, process-based concurrency was replaced with platform-thread-based concurrency.
+- Evolution & history are cyclic.
+- Most likely, in the following decade, Java's platform-thread-based concurrency will be replaced with Java's virtual-thread-based concurrency.
