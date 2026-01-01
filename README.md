@@ -23,13 +23,13 @@ git clone git@github.com:roman-dzhadan/concurrency-in-a-nutshell.git /tmp/concur
 
 - ["Concurrency is not Parallelism" - an insightful talk by "Rob Pike" at "Waza 2012"](https://youtu.be/oV9rvDllKEg)
 
-- Why does it worth to be watched?
-    1. Go was designed at Google in 2007 by Robert Griesemer, Rob Pike, and Ken Thompson, and publicly announced in November 2009
-    2. Go is relatively young programming language and had privilege to not repeat mistakes of its predecessors
-    3. Rob Pike was one of the main inventors of Go, and he is the speaker of the talk I'm recommending to watch
-    4. Go has first-class support for concurrency through goroutines and channels
-    5. Goroutines are lightweight threads managed by the Go runtime, allowing millions of concurrent tasks with minimal overhead
-    6. Go shines in high-performance backends by efficiently utilizing hardware resources, especially the CPU
+- Why does this talk worth to be watched?
+    * **Fact A:** Go was designed at Google in 2007 by Robert Griesemer, Rob Pike, and Ken Thompson, and publicly announced in November 2009.
+    * **Fact B:** Go is a relatively young programming language. Go had a privilege to learn lessons and do not repeat most of its predecessors mistakes.
+    * **Fact C:** Rob Pike was one of the main inventors of Go, and he is the speaker of the talk I'm recommending you to watch.
+    * **Fact D:** Go has a first-class support for concurrency through **goroutines** and **channels**.
+    * **Fact E:** Goroutines are lightweight threads managed by the Go runtime, allowing millions of concurrent tasks with minimal overhead.
+    * **Fact F:** Go shines in high-performance backends by efficiently utilizing hardware resources (CPU-wise & RAM-wise).
 
 # Introduction:
 
