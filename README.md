@@ -1,7 +1,7 @@
 # Bold Statements:
 
-- Statement 1: Java is essentially syntactic sugar over C.
-- Statement 2: Python is another form of syntactic sugar over C.
+- Statement 1: Java is essentially syntactic sugar over C
+- Statement 2: Python is another form of syntactic sugar over C
 
 # Introduction:
 
