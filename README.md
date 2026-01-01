@@ -21,7 +21,7 @@ git clone git@github.com:roman-dzhadan/concurrency-in-a-nutshell.git /tmp/concur
 
 # Prerequisite: What is the "concurrency"? What is the "parallelism"?
 
-- ["Concurrency is not Parallelism" - an insightful talk by "Rob Pike" at "Waza 2012"](https://youtu.be/oV9rvDllKEg)
+- ["Concurrency is not Parallelism" - an insightful talk by "Rob Pike" at "Waza 2012".](https://youtu.be/oV9rvDllKEg)
 
 - Why does this talk worth to be watched?
     * **Fact A:** Go was designed at Google in 2007 by Robert Griesemer, Rob Pike, and Ken Thompson, and publicly announced in November 2009.
