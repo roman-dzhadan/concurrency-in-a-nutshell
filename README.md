@@ -14,9 +14,9 @@ git clone git@github.com:roman-dzhadan/concurrency-in-a-nutshell.git /tmp/concur
 
 # Bold Statements:
 
-- Statement 1: Java is essentially syntactic sugar over C
-- Statement 2: Python is another form of syntactic sugar over C
-- Statement 3: Reactive programming in Java is a spectacularly mesmerizing piece of shit
+- **Statement 1:** Java is essentially nothing else then syntactic sugar over C.
+- **Statement 2:** Python is just another form of syntactic sugar over C.
+- **Statement 3:** Reactive programming in Java is a spectacularly mesmerizing piece of shit.
 
 # Introduction:
 
