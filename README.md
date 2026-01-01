@@ -25,8 +25,8 @@ git clone git@github.com:roman-dzhadan/concurrency-in-a-nutshell.git /tmp/concur
     * ["Concurrency is not Parallelism" - an insightful 30-mins long talk by "Rob Pike" at "Waza 2012".](https://youtu.be/oV9rvDllKEg)
 
 - Why does this talk worth to be watched?
-    * **Fact A:** Go was designed at Google in 2007 by Robert Griesemer, Rob Pike, and Ken Thompson, and publicly announced in November 2009. Rob Pike was one
-      of the main inventors of Go, and he is the speaker of the talk I'm recommending you to watch.
+    * **Fact A:** Go was designed at Google in 2007 by Robert Griesemer, Rob Pike, and Ken Thompson, and was publicly announced in November 2009. Rob Pike was
+      one of the main inventors of Go, and he is the speaker of the talk I'm recommending you to watch.
     * **Fact B:** Go is a relatively young programming language. Go not only had a privilege to learn lessons and do not repeat most of its predecessors design
       mistakes, but also had a chance to design language from scratch after multicore CPU(s) became mainstreamed. (spoiler alert: Java never had such a chance).
     * **Fact C:** Go rapidly gained the glory of a language for concurrent programming due to its unique concurrency-related features offered by Go's
