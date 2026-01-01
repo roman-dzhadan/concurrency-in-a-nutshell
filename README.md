@@ -19,7 +19,7 @@ git clone git@github.com:roman-dzhadan/concurrency-in-a-nutshell.git /tmp/concur
 - **Statement 3:** Reactive programming in Java is a spectacularly mesmerizing piece of shit.
 - **P.S.:** Feel free to quote me on these three statements.
 
-# Set Strict Boundaries:
+# Strict Boundaries:
 
 - What is the **"concurrency"** and what is the **"parallelism"**?
     * ["Concurrency is not Parallelism" - an insightful 30-mins long talk by "Rob Pike" at "Waza 2012".](https://youtu.be/oV9rvDllKEg)
