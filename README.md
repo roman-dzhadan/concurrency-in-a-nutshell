@@ -1,4 +1,4 @@
-# Entrypoint
+# Entrypoint:
 
 ```
 rm -rf /tmp/concurrency-in-a-nutshell && cd ~ && pwd
