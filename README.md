@@ -16,13 +16,13 @@ java pid_printer.java
 nvim pid_printer.py
 python pid_printer.py
 
-ps aux | grep XXXX
+ls -l /proc/XXXX/exe
 ```
 
 # Exec Quiz:
 
 ```bash
-cd ~/projects/concurrency-in-a-nutshell/src/quizes/quiz-exec/
+cd ~/projects/concurrency-in-a-nutshell/quizes/quiz-exec/
 
 nvim exec_quiz.c
 nvim ../../pid_printer_runners/pid_printer_runner.h
