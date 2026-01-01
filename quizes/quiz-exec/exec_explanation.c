@@ -1,7 +1,3 @@
-// https://man7.org/linux/man-pages/man3/printf.3.html
-// https://man7.org/linux/man-pages/man2/getpid.2.html
-// https://man7.org/linux/man-pages/man3/getppid.3p.html
-// https://man7.org/linux/man-pages/man2/execve.2.html
 #include <stdio.h>
 #include <unistd.h>
 #include "../../pid_printer_runners/pid_printer_runner.h"
