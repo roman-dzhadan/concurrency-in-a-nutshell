@@ -1,3 +1,10 @@
+# Entrypoint
+
+```
+cd ~ && pwd
+git clone git@github.com:roman-dzhadan/concurrency-in-a-nutshell.git /tmp/concurrency-in-a-nutshell
+```
+
 # Bold Statements:
 
 - Statement 1: Java is essentially syntactic sugar over C
@@ -6,15 +13,18 @@
 # Introduction:
 
 ```bash
-cd ~/projects/concurrency-in-a-nutshell/pid_printers/
-nvim pid_printer.c
-cc -o /tmp/pid_printer.bin pid_printer.c && /tmp/pid_printer.bin
+nvim /tmp/concurrency-in-a-nutshell/pid_printers/pid_printer.c
 
-nvim pid_printer.java
-java pid_printer.java
+cc -o /tmp/concurrency-in-a-nutshell/pid_printers/pid_printer.bin \ 
+      /tmp/concurrency-in-a-nutshell/pid_printers/pid_printer.c
 
-nvim pid_printer.py
-python pid_printer.py
+/tmp/concurrency-in-a-nutshell/pid_printers/pid_printer.bin
+
+nvim /tmp/concurrency-in-a-nutshell/pid_printers/pid_printer.java
+java /tmp/concurrency-in-a-nutshell/pid_printers/pid_printer.java
+
+nvim /tmp/concurrency-in-a-nutshell/pid_printers/pid_printer.py
+python /tmp/concurrency-in-a-nutshell/pid_printers/pid_printer.py
 
 ls -l /proc/XXXX/exe
 ```
@@ -22,35 +32,53 @@ ls -l /proc/XXXX/exe
 # Exec Quiz:
 
 ```bash
-cd ~/projects/concurrency-in-a-nutshell/quizes/quiz-exec/
+nvim /tmp/concurrency-in-a-nutshell/quizes/quiz-exec/exec_quiz.c
+nvim /tmp/concurrency-in-a-nutshell/pid_printer_runners/pid_printer_runner.h
+nvim /tmp/concurrency-in-a-nutshell/pid_printer_runners/pid_printer_runner.c
 
-nvim exec_quiz.c
-nvim ../../pid_printer_runners/pid_printer_runner.h
-nvim ../../pid_printer_runners/pid_printer_runner.c
+cc -o /tmp/concurrency-in-a-nutshell/quizes/quiz-exec/exec_quiz.bin \
+   /tmp/concurrency-in-a-nutshell/pid_printer_runners/pid_printer_runner.c \
+   /tmp/concurrency-in-a-nutshell/quizes/quiz-exec/exec_quiz.c
+   
+/tmp/concurrency-in-a-nutshell/quizes/quiz-exec/exec_quiz.bin
 
-cc -o /tmp/exec_quiz.bin ../../pid_printer_runners/pid_printer_runner.c exec_quiz.c && /tmp/exec_quiz.bin
+nvim /tmp/concurrency-in-a-nutshell/quizes/quiz-exec/exec_explanation.c
 
-nvim exec_explanation.c
-cc -o /tmp/exec_explanation.bin ../../pid_printer_runners/pid_printer_runner.c exec_explanation.c && /tmp/exec_explanation.bin
+cc -o /tmp/concurrency-in-a-nutshell/quizes/quiz-exec/exec_explanation.bin \
+   /tmp/concurrency-in-a-nutshell/pid_printer_runners/pid_printer_runner.c \
+   /tmp/concurrency-in-a-nutshell/quizes/quiz-exec/exec_explanation.c
+
+/tmp/concurrency-in-a-nutshell/quizes/quiz-exec/exec_explanation.bin
 ```
 
 # Fork Quiz:
 
 ```bash
-cd ~/projects/concurrency-in-a-nutshell/src/quizes/quiz-fork/
-nvim fork_quiz.c
-cc -o /tmp/fork_quiz.bin fork_quiz.c && /tmp/fork_quiz.bin
+nvim /tmp/concurrency-in-a-nutshell/quizes/quiz-fork/fork_quiz.c
 
-nvim fork_explanation.c
-cc -o /tmp/fork_explanation.bin fork_explanation.c && /tmp/fork_explanation.bin
+cc -o /tmp/concurrency-in-a-nutshell/quizes/quiz-fork/fork_quiz.bin \
+   /tmp/concurrency-in-a-nutshell/quizes/quiz-fork/fork_quiz.c
+   
+/tmp/concurrency-in-a-nutshell/quizes/quiz-fork/fork_quiz.bin
+
+nvim /tmp/concurrency-in-a-nutshell/quizes/quiz-fork/fork_explanation.c
+
+cc -o /tmp/concurrency-in-a-nutshell/quizes/quiz-fork/fork_explanation.bin \ 
+   /tmp/concurrency-in-a-nutshell/quizes/quiz-fork/fork_explanation.c
+   
+/tmp/concurrency-in-a-nutshell/quizes/quiz-fork/fork_explanation.bin
 ```
 
 # Fork & Exec Quiz:
 
 ```bash
-cd ~/projects/concurrency-in-a-nutshell/src/quizes/quiz-fork-n-exec/
-nvim fork_n_exec_quiz.c
-cc -o /tmp/fork_n_exec_quiz.bin ../../pid_printer_runners/pid_printer_runner.c fork_n_exec_quiz.c && /tmp/fork_n_exec_quiz.bin
+nvim /tmp/concurrency-in-a-nutshell/quizes/quiz-fork-n-exec/fork_n_exec_quiz.c
 
-nvim fork_n_exec_explanation.md
+cc -o /tmp/concurrency-in-a-nutshell/quizes/quiz-fork-n-exec/fork_n_exec_quiz.bin \ 
+   /tmp/concurrency-in-a-nutshell/pid_printer_runners/pid_printer_runner.c \
+   /tmp/concurrency-in-a-nutshell/quizes/quiz-fork-n-exec/fork_n_exec_quiz.c
+
+/tmp/concurrency-in-a-nutshell/quizes/quiz-fork-n-exec/fork_n_exec_quiz.bin
+
+nvim /tmp/concurrency-in-a-nutshell/quizes/quiz-fork-n-exec/fork_n_exec_explanation.md
 ```

@@ -25,7 +25,7 @@ strace -f -p XXXX -e trace=execve,vfork,fork,clone
 
 # What is the morale?
 
-- Don't be a dinosaur. Keep learning. Be open-minded. Be curious. Stay up-to-date.
+- Don't be a dinosaur. Keep learning. Be open-minded. Be curious. Stay up-to-date. Deep dive.
 - Long time ago, process-based concurrency was aggressively & massively replaced with kernel-thread-based concurrency.
 - In Java/JVM terms, process-based concurrency was replaced with platform-thread-based concurrency.
 - Evolution & history are cyclic.
