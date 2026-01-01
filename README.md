@@ -21,7 +21,7 @@ git clone git@github.com:roman-dzhadan/concurrency-in-a-nutshell.git /tmp/concur
 
 # Set Strict Boundaries:
 
-- What is "concurrency" and what is "parallelism"?
+- What is the **"concurrency"** and what is the **"parallelism"**?
     * ["Concurrency is not Parallelism" - an insightful talk by "Rob Pike" at "Waza 2012".](https://youtu.be/oV9rvDllKEg)
 
 - Why does this talk worth to be watched?
