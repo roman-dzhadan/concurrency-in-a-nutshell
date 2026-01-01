@@ -6,9 +6,9 @@
 # Introduction:
 
 ```bash
-cd ~/projects/concurrency-in-a-nutshell/src/pid_printers/
+cd ~/projects/concurrency-in-a-nutshell/pid_printers/
 nvim pid_printer.c
-gcc -o /tmp/pid_printer.bin pid_printer.c && /tmp/pid_printer.bin
+cc -o /tmp/pid_printer.bin pid_printer.c && /tmp/pid_printer.bin
 
 nvim pid_printer.java
 java pid_printer.java
@@ -28,10 +28,10 @@ nvim exec_quiz.c
 nvim ../../pid_printer_runners/pid_printer_runner.h
 nvim ../../pid_printer_runners/pid_printer_runner.c
 
-gcc -o /tmp/exec_quiz.bin ../../pid_printer_runners/pid_printer_runner.c exec_quiz.c && /tmp/exec_quiz.bin
+cc -o /tmp/exec_quiz.bin ../../pid_printer_runners/pid_printer_runner.c exec_quiz.c && /tmp/exec_quiz.bin
 
 nvim exec_explanation.c
-gcc -o /tmp/exec_explanation.bin ../../pid_printer_runners/pid_printer_runner.c exec_explanation.c && /tmp/exec_explanation.bin
+cc -o /tmp/exec_explanation.bin ../../pid_printer_runners/pid_printer_runner.c exec_explanation.c && /tmp/exec_explanation.bin
 ```
 
 # Fork Quiz:
@@ -39,10 +39,10 @@ gcc -o /tmp/exec_explanation.bin ../../pid_printer_runners/pid_printer_runner.c 
 ```bash
 cd ~/projects/concurrency-in-a-nutshell/src/quizes/quiz-fork/
 nvim fork_quiz.c
-gcc -o /tmp/fork_quiz.bin fork_quiz.c && /tmp/fork_quiz.bin
+cc -o /tmp/fork_quiz.bin fork_quiz.c && /tmp/fork_quiz.bin
 
 nvim fork_explanation.c
-gcc -o /tmp/fork_explanation.bin fork_explanation.c && /tmp/fork_explanation.bin
+cc -o /tmp/fork_explanation.bin fork_explanation.c && /tmp/fork_explanation.bin
 ```
 
 # Fork & Exec Quiz:
@@ -50,7 +50,7 @@ gcc -o /tmp/fork_explanation.bin fork_explanation.c && /tmp/fork_explanation.bin
 ```bash
 cd ~/projects/concurrency-in-a-nutshell/src/quizes/quiz-fork-n-exec/
 nvim fork_n_exec_quiz.c
-gcc -o /tmp/fork_n_exec_quiz.bin ../../pid_printer_runners/pid_printer_runner.c fork_n_exec_quiz.c && /tmp/fork_n_exec_quiz.bin
+cc -o /tmp/fork_n_exec_quiz.bin ../../pid_printer_runners/pid_printer_runner.c fork_n_exec_quiz.c && /tmp/fork_n_exec_quiz.bin
 
 nvim fork_n_exec_explanation.md
 ```
