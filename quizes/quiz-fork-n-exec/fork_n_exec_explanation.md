@@ -7,7 +7,7 @@
 - Various IPC techniques were used to organize coordination among those "logical flows" (pipes, sockets, signals, etc.)
 - "Berkeley POSTGRES" (June 1989) is the classical example of an old product that has such "multi-process" design
 - https://github.com/postgres/postgres/blob/master/src/backend/postmaster/fork_process.c#L66
-- Postgres only uses fork() system calls and don't use exec() system calls
+- Postgres only uses fork() system calls and don't use execve() system calls
 - They are doing this to maximize the reaction speed on a new established network connection:
     - Single user-space/kernel-space roundtrip is cheaper than two such round trips
     - Full re-initialization of a virtual memory addresses is an expensive exercise
