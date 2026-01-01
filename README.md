@@ -21,19 +21,18 @@ git clone git@github.com:roman-dzhadan/concurrency-in-a-nutshell.git /tmp/concur
 
 # Strict Boundaries:
 
-- What is the **"concurrency"** and what is the **"parallelism"**?
-    * ["Concurrency is not Parallelism" - an insightful 30-mins long talk by "Rob Pike" at "Waza 2012".](https://youtu.be/oV9rvDllKEg)
+- What are **"concurrency"** and **"parallelism"**?
+    * ["Concurrency is not Parallelism" - an insightful 30-minute talk by "Rob Pike" at "Waza 2012".](https://youtu.be/oV9rvDllKEg)
 
-- Why does this talk worth to be watched?
-    * **Fact A:** Go was designed at Google in 2007 by Robert Griesemer, Rob Pike, and Ken Thompson, and was publicly announced in November 2009. Rob Pike was
-      one of the main inventors of Go, and he is the speaker of the talk I'm recommending you to watch.
-    * **Fact B:** Go is a relatively young programming language. Go not only had a privilege to learn lessons and do not repeat most of its predecessors design
-      mistakes, but also had a chance to design a language from a scratch right after multicore CPU(s) became mainstreamed. **Spoiler Alert:** Java never had
-      such opportunity.
-    * **Fact C:** Go rapidly gained the glory of a language for concurrent programming due to its unique concurrency-related features offered by Go's
+- Why is this talk worth watching?
+    * **Fact A:** Go was designed at Google in 2007 by Robert Griesemer, Rob Pike, and Ken Thompson, and was publicly announced in November 2009. Rob Pike, one
+      of Go's main inventors, is also the speaker of this recommended talk.
+    * **Fact B:** Go is a relatively young programming language. It not only had the privilege to learn from its predecessors’ mistakes, but also the
+      opportunity to design a language from scratch just after multicore CPUs became mainstream. (Spoiler: Java never had this advantage.)
+    * **Fact C:** Go quickly earned a reputation as a language for concurrent programming due to its unique concurrency-oriented features offered by Go's
       programming language designers.
-    * **Fact D:** Go has a first-class support for concurrency through **goroutines** and **channels**. Goroutines are lightweight threads managed by the Go
-      runtime, allowing millions of concurrent tasks with minimal overhead.
+    * **Fact D:** Go provides first-class support for concurrency through **goroutines** and **channels**. Goroutines are lightweight threads managed by the Go
+      runtime, allowing millions of concurrent tasks with minimal overhead. (Spoiler: Isn't **Project Loom** bell ringing?)
 
 # Introduction:
 
