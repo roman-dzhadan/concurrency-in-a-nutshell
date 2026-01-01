@@ -27,8 +27,8 @@
 # Chronology:
 
 1. Multiple processes (the original UNIX model) : fork() + IPC
-   Early UNIX had processes only, no threads.
-   Software engineers achieved concurrency by fork()-ing multiple processes and coordinating them using pipes, signals,
+    - Early UNIX had processes only, no threads.
+    - Software engineers achieved concurrency by fork()-ing multiple processes and coordinating them using pipes, signals,
    shared memory (SysV IPC), semaphores, sockets.
 
    Pros:
@@ -47,8 +47,8 @@
     - Shells
 
 2. Event loops + non-blocking I/O (cooperative multitasking)
-   Before threads, many systems used single-process & event-driven designs.
-   select(), poll() (and earlier equivalents)
+    - Before threads, many systems used single-process & event-driven designs.
+    - select(), poll() (and earlier equivalents)
 
    Key Traits:
     - Used non-blocking I/O
@@ -73,10 +73,10 @@
     - This is the ancestor of Node.js, async/await, and reactive frameworks !!!
 
 3. User-level threads ("green threads")
-   Before kernel threads, many systems implemented threads entirely in user space !!!
-   A runtime library managed multiple "threads"
-   Context switching done by saving registers & stack
-   The kernel saw one process !!!
+    - Before kernel threads, many systems implemented threads entirely in user space !!!
+    - A runtime library managed multiple "threads"
+    - Context switching done by saving registers & stack
+    - The kernel saw one process !!!
 
    Scheduling:
     - Cooperative (yield points)
@@ -99,7 +99,7 @@
     - Hard to integrate with system libraries
 
 4. Coroutines and Continuations
-   Coroutines are functions that can suspend and resume with explicit yield control
+    - Coroutines are functions that can suspend and resume with explicit yield control
    Characteristics:
     - Cooperative
     - Deterministic scheduling
@@ -113,8 +113,8 @@
     - Modern revival: Kotlin coroutines, Python generators, C++20 coroutines !!!
 
 5. Signals as a "poor man's concurrency"
-   Software engineers abused OS signals to interrupt execution, run small handlers and emulate asynchronous events
-   Signals influenced async I/O APIs but are rarely used directly now
+    - Software engineers abused OS signals to interrupt execution, run small handlers and emulate asynchronous events
+    - Signals influenced async I/O APIs but are rarely used directly now
 
    Problems:
     - Extremely limited
@@ -122,13 +122,13 @@
     - Hard to reason about
 
 6. Hardware-level parallelism without threads.
-   Even before OS native threads, multiprocessor machines existed.
-   OS scheduled processes on multiple processing units.
-   Parallelism came from multiple processes, not threads.
-   Threads were introduced mainly to reduce overhead, enable shared-memory programming and improve scalability.
+    - Even before OS native threads, multiprocessor machines existed.
+    - OS scheduled processes on multiple processing units.
+    - Parallelism came from multiple processes, not threads.
+    - Threads were introduced mainly to reduce overhead, enable shared-memory programming and improve scalability.
 
 7. When Linux actually got threads
-   Linux originally had:
+    - Linux originally had:
     - Processes only (task_struct)
     - clone() introduced in mid-90s
     - NPTL (Native POSIX Thread Library) finalized in Linux 2.6 (17 December 2003)
@@ -137,7 +137,7 @@
     - Threads became cheap
     - POSIX pthread became practical
     - User-space threading mostly vanished !!!
-    - Programming languages massively refused their user-space threading models in favor of "new shine kernel thing"
+    - Programming languages massively refused their user-space threading models in favor of "a new shiny kernel thing"
 
 # CONCLUSIONS
 
