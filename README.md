@@ -27,7 +27,8 @@ git clone git@github.com:roman-dzhadan/concurrency-in-a-nutshell.git /tmp/concur
 - Why does this talk worth to be watched?
     * **Fact A:** Go was designed at Google in 2007 by Robert Griesemer, Rob Pike, and Ken Thompson, and publicly announced in November 2009. Rob Pike was one
       of the main inventors of Go, and he is the speaker of the talk I'm recommending you to watch.
-    * **Fact B:** Go rapidly gained the glory of a language for concurrent programming due to its unique concurrency-related features.
+    * **Fact B:** Go rapidly gained the glory of a language for concurrent programming due to its unique concurrency-related features offered by Go's
+      programming language designers.
     * **Fact C:** Go is a relatively young programming language. Go had a privilege to learn lessons and do not repeat most of its predecessors design
       mistakes.
     * **Fact D:** Go has a first-class support for concurrency through **goroutines** and **channels**. Goroutines are lightweight threads managed by the Go
