@@ -48,7 +48,7 @@
 
 2. Event loops + non-blocking I/O (cooperative multitasking)
     - Before threads, many systems used single-process & event-driven designs.
-    - [select(2)](https://linux.die.net/man/2/select), [poll(2)](https://linux.die.net/man/2/select) (and earlier equivalents)
+    - [select(2)](https://linux.die.net/man/2/select), [poll(2)](https://linux.die.net/man/2/poll) (and earlier equivalents)
 
    Key Traits:
     - Used non-blocking I/O
