@@ -8,10 +8,16 @@
 - https://linux.die.net/man/3/execv
 - https://linux.die.net/man/3/execvp
 - https://linux.die.net/man/3/execle
-- https://linux.die.net/man/3/execve                      // this one is actually a system call, while all others are stdlib's helpers/wrappers/derivatives
-- https://linux.die.net/man/3/vfork
-- https://linux.die.net/man/3/fork
-- https://linux.die.net/man/3/clone
+- https://linux.die.net/man/2/execve                      // this one is actually a system call, while all others are stdlib's helpers/wrappers/derivatives
+- https://linux.die.net/man/2/vfork
+- https://linux.die.net/man/2/fork
+- https://linux.die.net/man/2/clone
+
+# How to read man URL?
+- 2: System calls (functions provided by the kernel)
+- 3: Library calls (functions from standard C library, libc)
+
+# How to trace JVM?
 
 ```bash
 strace -f -p XXXX -e trace=exec,execl,execlp,execv,execvp,execle,execve,vfork,fork,clone
