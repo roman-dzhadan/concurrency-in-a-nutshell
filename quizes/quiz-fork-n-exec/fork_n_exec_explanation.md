@@ -1,4 +1,4 @@
-# mandatory fork() system call + optional exec() system call
+# The power of combining fork() + execve() system calls
 
 - The combination of these 2 system calls for a long time was the only possible way to write concurrent programs
 - These system calls were a building blocks that allowed engineers to break down software on a multiple "logical flows"
