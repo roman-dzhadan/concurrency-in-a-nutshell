@@ -47,7 +47,7 @@ layers**. As software engineers, we have **one neighbor above us**: programming 
 ### Reality is Parallel, Not Object-Oriented
 
 - The universe/reality is inherently **parallel**, not object-oriented.
-- Software engineering is an attempt to design and program a simplified mode - a specific subset of reality.
+- Software engineering is an attempt to design and program a simplified model of a specific subset of reality.
 
 ### Concurrency vs. Parallelism
 
@@ -65,8 +65,7 @@ In practical terms:
 
 ### Should We Worry About Concurrency?
 
-**No.** Technically, we don't have control over it (hello, Stoics!). Programming language designers already designed "
-concurrency building blocks" and gave them to us. We can only:
+**No.** Technically, we don't have control over it (hello, Stoics!). Programming language designers already designed "concurrency building blocks" and gave them to us. We can only:
 
 - Apply them to program our "reality models" (a.k.a. "software")
 - Give feedback to programming language designers about our Developer Experience (DevEx)
