@@ -47,7 +47,7 @@ layers**. As software engineers, we have **one neighbor above us**: programming 
 ### Reality is Parallel, Not Object-Oriented
 
 - The universe/reality is inherently **parallel**, not object-oriented.
-- Software engineering is an attempt to design and program a simplified mode - a specific subset of reality.
+- Software engineering is an attempt to design and program a simplified model of a specific subset of reality.
 
 ### Concurrency vs. Parallelism
 
@@ -65,8 +65,7 @@ In practical terms:
 
 ### Should We Worry About Concurrency?
 
-**No.** Technically, we don't have control over it (hello, Stoics!). Programming language designers already designed "
-concurrency building blocks" and gave them to us. We can only:
+**No.** Technically, we don't have control over it (hello, Stoics!). Programming language designers already designed "concurrency building blocks" and gave them to us. We can only:
 
 - Apply them to program our "reality models" (a.k.a. "software")
 - Give feedback to programming language designers about our Developer Experience (DevEx)
@@ -89,23 +88,9 @@ As software engineers, our responsibilities are:
 
 ---
 
-## The Hardware Context: How Parallelism Evolved
+## Software + Hardware = Cost of development & operations
 
-### Historical Parallelism (Pre-Multicore Era)
-
-- Before multicore CPUs became mainstream, hardware vendors delivered parallelism **automatically**, without burdening
-  software engineers.
-- Hardware vendors exploited instruction-level, data-level, and pipeline parallelism **inside CPUs** - largely invisible
-  to software.
-
-### Modern Parallelism (Post-Multicore Era)
-
-- Nowadays, hardware vendors deliver parallelism in more **explicit and scalable** ways.
-
-**The Critical Shift:** With the multicore revolution (~2005), the burden shifted. Software engineers could no longer
-rely on automatic parallelism - they had to write explicitly concurrent code.
-
-**The Moral:** There is no need to buy more hardware to handle the same workload if we can achieve the same results
+**Statement:** There is no need to buy more hardware to handle the same workload if we can achieve the same results
 using fewer computational resources by **programming differently** or **using a different programming language**. Such
 thinking might give a competitive advantage to our business and helps to win market share (cost-wise).
 
