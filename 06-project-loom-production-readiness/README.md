@@ -597,7 +597,7 @@ As a software engineer, **Project Loom represents a generational shift**:
     - It's just threads, but lightweight
     - You already know 90% of what you need
 
-3. **Push Your Organization to Adopt**
+3. **Push Your Team/Organization to Adopt**
     - The business case is clear: lower cost, faster delivery
     - The technical case is clear: simpler code, easier debugging
 
