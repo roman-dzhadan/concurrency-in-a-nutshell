@@ -5,6 +5,14 @@
 - These views are based on my personal experience and observations.
 - I would like to share my mental model of the subject with you.
 
+# Non-Goals:
+
+- I'm not going to show/teach you how to use Project Loom (a.k.a.: virtual threads, structured concurrency, scoped values).
+
+# Goals:
+
+- I'm going to convince you, that Project Loom is a Re:Revolution in Java and it worth to find time & invest it in learning/practicing these new techniques.
+
 # Entrypoint:
 
 ```
