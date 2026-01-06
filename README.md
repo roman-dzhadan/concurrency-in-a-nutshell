@@ -7,110 +7,35 @@
 
 # Non-Goals:
 
-- I'm not going to show/teach you how to use Project Loom (a.k.a.: virtual threads, structured concurrency, scoped values).
+- I'm not going to show/teach you how to use Project Loom (a.k.a.: virtual threads, structured concurrency, scoped
+  values).
 
 # Goals:
 
-- I'm going to convince you, that Project Loom is a Re:Revolution in Java and it worth to find time & invest it in learning/practicing these new techniques.
+- I'm going to convince you, that Project Loom is a Re:Revolution in Java and it worth to find time & invest it in
+  learning/practicing these new techniques.
+
+# Agenda:
+
+1. [Java's Long Struggle with Concurrency Primitives](01-java-long-struggling-with-concurrency-primitives/README.md)
+2. [Re:Revolution Irony](02-re-revolution-irony/README.md)
+3. [Rob Pike Persona & Go's Influence](03-rob-pike-persona-and-go-influence/README.md)
+4. [Async/Await Alternative](04-async-await-alternative/README.md)
+5. [Project Loom State](05-project-loom-state/README.md)
+6. [Project Loom Production Readiness](06-project-loom-production-readiness/README.md)
+7. [Virtual Threads Bring Extra Pressure on Heap and GC](07-virtual-threads-brings-extra-pressure-on-heap-and-gc/README.md)
+8. [Live Demos and Quizzes](08-live-demos-and-quizzes/README.md)
+
+# Bold Statements:
+
+- **Statement 1:** Project Loom will overtake every previously created concurrency techniques that were introduced for
+  JVM in recent 20 years.
+- **Statement 2:** Java is essentially nothing more than syntactic sugar over C.
+- **Statement 3:** Python is just another form of syntactic sugar over C.
 
 # Entrypoint:
 
 ```
 rm -rf /tmp/concurrency-in-a-nutshell && cd ~ && pwd
 git clone git@github.com:roman-dzhadan/concurrency-in-a-nutshell.git /tmp/concurrency-in-a-nutshell/
-```
-
-# Bold Statements:
-
-- **Statement 1:** Java is essentially nothing more than syntactic sugar over C.
-- **Statement 2:** Python is just another form of syntactic sugar over C.
-- **Statement 3:** Reactive programming in Java is a spectacularly mesmerizing piece of shit.
-- **P.S.:** Feel free to quote me on these three statements.
-
-# Strict Boundaries:
-
-- What are **"concurrency"** and **"parallelism"**?
-    * ["Concurrency is not Parallelism" - an insightful 30-minute talk by "Rob Pike" at "Waza 2012".](https://youtu.be/oV9rvDllKEg)
-
-- Why is this talk worth watching?
-    * **Fact A:** Go was designed at Google in 2007 by Robert Griesemer, Rob Pike, and Ken Thompson, and was publicly announced in November 2009. Rob Pike, one
-      of Go's main inventors, is also the speaker of this recommended talk.
-    * **Fact B:** Go is a relatively young programming language. It not only had the privilege to learn from its predecessors’ mistakes, but also the
-      opportunity to design a language from scratch just after multicore CPUs became mainstream. (Spoiler: Java never had this advantage.)
-    * **Fact C:** Go quickly earned a reputation as a language for concurrent programming due to its unique concurrency-oriented features offered by Go's
-      programming language designers.
-    * **Fact D:** Go provides first-class support for concurrency through **goroutines** and **channels**. Goroutines are lightweight threads managed by the Go
-      runtime, allowing millions of concurrent tasks with minimal overhead. (Spoiler: Isn't **Project Loom** bell ringing?)
-
-# Introduction:
-
-```bash
-nvim /tmp/concurrency-in-a-nutshell/pid_printers/pid_printer.c
-
-cc -o /tmp/concurrency-in-a-nutshell/pid_printers/pid_printer.bin \
-      /tmp/concurrency-in-a-nutshell/pid_printers/pid_printer.c
-
-/tmp/concurrency-in-a-nutshell/pid_printers/pid_printer.bin
-
-nvim /tmp/concurrency-in-a-nutshell/pid_printers/pid_printer.java
-java /tmp/concurrency-in-a-nutshell/pid_printers/pid_printer.java
-
-nvim /tmp/concurrency-in-a-nutshell/pid_printers/pid_printer.py
-python /tmp/concurrency-in-a-nutshell/pid_printers/pid_printer.py
-
-ls -l /proc/XXXX/exe
-```
-
-# Exec Quiz:
-
-```bash
-nvim /tmp/concurrency-in-a-nutshell/quizes/quiz-exec/exec_quiz.c
-nvim /tmp/concurrency-in-a-nutshell/pid_printer_runners/pid_printer_runner.h
-nvim /tmp/concurrency-in-a-nutshell/pid_printer_runners/pid_printer_runner.c
-
-cc -o /tmp/concurrency-in-a-nutshell/quizes/quiz-exec/exec_quiz.bin \
-   /tmp/concurrency-in-a-nutshell/pid_printer_runners/pid_printer_runner.c \
-   /tmp/concurrency-in-a-nutshell/quizes/quiz-exec/exec_quiz.c
-   
-/tmp/concurrency-in-a-nutshell/quizes/quiz-exec/exec_quiz.bin
-
-nvim /tmp/concurrency-in-a-nutshell/quizes/quiz-exec/exec_explanation.c
-
-cc -o /tmp/concurrency-in-a-nutshell/quizes/quiz-exec/exec_explanation.bin \
-   /tmp/concurrency-in-a-nutshell/pid_printer_runners/pid_printer_runner.c \
-   /tmp/concurrency-in-a-nutshell/quizes/quiz-exec/exec_explanation.c
-
-/tmp/concurrency-in-a-nutshell/quizes/quiz-exec/exec_explanation.bin
-```
-
-# Fork Quiz:
-
-```bash
-nvim /tmp/concurrency-in-a-nutshell/quizes/quiz-fork/fork_quiz.c
-
-cc -o /tmp/concurrency-in-a-nutshell/quizes/quiz-fork/fork_quiz.bin \
-   /tmp/concurrency-in-a-nutshell/quizes/quiz-fork/fork_quiz.c
-   
-/tmp/concurrency-in-a-nutshell/quizes/quiz-fork/fork_quiz.bin
-
-nvim /tmp/concurrency-in-a-nutshell/quizes/quiz-fork/fork_explanation.c
-
-cc -o /tmp/concurrency-in-a-nutshell/quizes/quiz-fork/fork_explanation.bin \
-   /tmp/concurrency-in-a-nutshell/quizes/quiz-fork/fork_explanation.c
-   
-/tmp/concurrency-in-a-nutshell/quizes/quiz-fork/fork_explanation.bin
-```
-
-# Fork & Exec Quiz:
-
-```bash
-nvim /tmp/concurrency-in-a-nutshell/quizes/quiz-fork-n-exec/fork_n_exec_quiz.c
-
-cc -o /tmp/concurrency-in-a-nutshell/quizes/quiz-fork-n-exec/fork_n_exec_quiz.bin \
-   /tmp/concurrency-in-a-nutshell/pid_printer_runners/pid_printer_runner.c \
-   /tmp/concurrency-in-a-nutshell/quizes/quiz-fork-n-exec/fork_n_exec_quiz.c
-
-/tmp/concurrency-in-a-nutshell/quizes/quiz-fork-n-exec/fork_n_exec_quiz.bin
-
-nvim /tmp/concurrency-in-a-nutshell/quizes/quiz-fork-n-exec/fork_n_exec_explanation.md
 ```
