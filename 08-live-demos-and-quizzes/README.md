@@ -5,7 +5,7 @@
 ```bash
 nvim /tmp/concurrency-in-a-nutshell/08-live-demos-and-quizzes/pid_printers/pid_printer.c
 
-cc -o /tmp/concurrency-in-a-nutshell/08-live-demos-and-quizzes/pid_printers/pid_printer.bin \
+gcc -o /tmp/concurrency-in-a-nutshell/08-live-demos-and-quizzes/pid_printers/pid_printer.bin \
       /tmp/concurrency-in-a-nutshell/08-live-demos-and-quizzes/pid_printers/pid_printer.c
 
 /tmp/concurrency-in-a-nutshell/08-live-demos-and-quizzes/pid_printers/pid_printer.bin
@@ -26,7 +26,7 @@ nvim /tmp/concurrency-in-a-nutshell/08-live-demos-and-quizzes/quizes/quiz-exec/e
 nvim /tmp/concurrency-in-a-nutshell/08-live-demos-and-quizzes/pid_printer_runners/pid_printer_runner.h
 nvim /tmp/concurrency-in-a-nutshell/08-live-demos-and-quizzes/pid_printer_runners/pid_printer_runner.c
 
-cc -o /tmp/concurrency-in-a-nutshell/08-live-demos-and-quizzes/quizes/quiz-exec/exec_quiz.bin \
+gcc -o /tmp/concurrency-in-a-nutshell/08-live-demos-and-quizzes/quizes/quiz-exec/exec_quiz.bin \
    /tmp/concurrency-in-a-nutshell/08-live-demos-and-quizzes/pid_printer_runners/pid_printer_runner.c \
    /tmp/concurrency-in-a-nutshell/08-live-demos-and-quizzes/quizes/quiz-exec/exec_quiz.c
    
@@ -34,7 +34,7 @@ cc -o /tmp/concurrency-in-a-nutshell/08-live-demos-and-quizzes/quizes/quiz-exec/
 
 nvim /tmp/concurrency-in-a-nutshell/08-live-demos-and-quizzes/quizes/quiz-exec/exec_explanation.c
 
-cc -o /tmp/concurrency-in-a-nutshell/08-live-demos-and-quizzes/quizes/quiz-exec/exec_explanation.bin \
+gcc -o /tmp/concurrency-in-a-nutshell/08-live-demos-and-quizzes/quizes/quiz-exec/exec_explanation.bin \
    /tmp/concurrency-in-a-nutshell/08-live-demos-and-quizzes/pid_printer_runners/pid_printer_runner.c \
    /tmp/concurrency-in-a-nutshell/08-live-demos-and-quizzes/quizes/quiz-exec/exec_explanation.c
 
@@ -46,14 +46,14 @@ cc -o /tmp/concurrency-in-a-nutshell/08-live-demos-and-quizzes/quizes/quiz-exec/
 ```bash
 nvim /tmp/concurrency-in-a-nutshell/08-live-demos-and-quizzes/quizes/quiz-fork/fork_quiz.c
 
-cc -o /tmp/concurrency-in-a-nutshell/08-live-demos-and-quizzes/quizes/quiz-fork/fork_quiz.bin \
+gcc -o /tmp/concurrency-in-a-nutshell/08-live-demos-and-quizzes/quizes/quiz-fork/fork_quiz.bin \
    /tmp/concurrency-in-a-nutshell/08-live-demos-and-quizzes/quizes/quiz-fork/fork_quiz.c
    
 /tmp/concurrency-in-a-nutshell/08-live-demos-and-quizzes/quizes/quiz-fork/fork_quiz.bin
 
 nvim /tmp/concurrency-in-a-nutshell/08-live-demos-and-quizzes/quizes/quiz-fork/fork_explanation.c
 
-cc -o /tmp/concurrency-in-a-nutshell/08-live-demos-and-quizzes/quizes/quiz-fork/fork_explanation.bin \
+gcc -o /tmp/concurrency-in-a-nutshell/08-live-demos-and-quizzes/quizes/quiz-fork/fork_explanation.bin \
    /tmp/concurrency-in-a-nutshell/08-live-demos-and-quizzes/quizes/quiz-fork/fork_explanation.c
    
 /tmp/concurrency-in-a-nutshell/08-live-demos-and-quizzes/quizes/quiz-fork/fork_explanation.bin
@@ -64,7 +64,7 @@ cc -o /tmp/concurrency-in-a-nutshell/08-live-demos-and-quizzes/quizes/quiz-fork/
 ```bash
 nvim /tmp/concurrency-in-a-nutshell/08-live-demos-and-quizzes/quizes/quiz-fork-n-exec/fork_n_exec_quiz.c
 
-cc -o /tmp/concurrency-in-a-nutshell/08-live-demos-and-quizzes/quizes/quiz-fork-n-exec/fork_n_exec_quiz.bin \
+gcc -o /tmp/concurrency-in-a-nutshell/08-live-demos-and-quizzes/quizes/quiz-fork-n-exec/fork_n_exec_quiz.bin \
    /tmp/concurrency-in-a-nutshell/08-live-demos-and-quizzes/pid_printer_runners/pid_printer_runner.c \
    /tmp/concurrency-in-a-nutshell/08-live-demos-and-quizzes/quizes/quiz-fork-n-exec/fork_n_exec_quiz.c
 
