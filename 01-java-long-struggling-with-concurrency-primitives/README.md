@@ -92,18 +92,6 @@ As software engineers, our responsibilities are:
 
 ### Historical Parallelism (Pre-Multicore Era)
 
-- Before multicore CPUs became mainstream, hardware vendors delivered parallelism **automatically**, without burdening
-  software engineers.
-- Hardware vendors exploited instruction-level, data-level, and pipeline parallelism **inside CPUs** - largely invisible
-  to software.
-
-### Modern Parallelism (Post-Multicore Era)
-
-- Nowadays, hardware vendors deliver parallelism in more **explicit and scalable** ways.
-
-**The Critical Shift:** With the multicore revolution (~2005), the burden shifted. Software engineers could no longer
-rely on automatic parallelism - they had to write explicitly concurrent code.
-
 **The Moral:** There is no need to buy more hardware to handle the same workload if we can achieve the same results
 using fewer computational resources by **programming differently** or **using a different programming language**. Such
 thinking might give a competitive advantage to our business and helps to win market share (cost-wise).
