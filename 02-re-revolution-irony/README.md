@@ -9,8 +9,7 @@ years later. This is the story of that journey.
 ## The Parallelism Timeline
 
 To understand why Loom is a return to roots, we must trace when concurrent programs actually started running in
-parallel. The journey spans two eras: the **Multiprocessor Era** (multiple physical chips connected by wires) and the *
-*Multicore Era** (multiple processing units on a single piece of silicon).
+parallel. The journey spans two eras: the **Multiprocessor Era** (multiple physical chips connected by wires) and the **Multicore Era** (multiple processing units on a single piece of silicon).
 
 ---
 
