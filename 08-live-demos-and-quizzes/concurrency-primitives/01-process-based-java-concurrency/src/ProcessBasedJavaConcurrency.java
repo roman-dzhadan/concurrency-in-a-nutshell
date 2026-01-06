@@ -1,9 +1,9 @@
 void main() throws IOException, InterruptedException {
     IO.println("[STARTED] JAVA WRAPPER WITH PID = " + ProcessHandle.current().pid());
 
-    var cProcess = new ProcessBuilder("/tmp/pid_printer.bin").inheritIO().start();
-    var javaProcess = new ProcessBuilder("java", "/home/roman/projects/concurrency-in-a-nutshell/pid_printers/pid_printer.java").inheritIO().start();
-    var pythonProcess = new ProcessBuilder("python", "/home/roman/projects/concurrency-in-a-nutshell/pid_printers/pid_printer.py").inheritIO().start();
+    var cProcess = new ProcessBuilder("/tmp/concurrency-in-a-nutshell/08-live-demos-and-quizzes/pid_printers/pid_printer.bin").inheritIO().start();
+    var javaProcess = new ProcessBuilder("java", "/tmp/concurrency-in-a-nutshell/08-live-demos-and-quizzes/pid_printers/pid_printer.java").inheritIO().start();
+    var pythonProcess = new ProcessBuilder("python", "/tmp/concurrency-in-a-nutshell/08-live-demos-and-quizzes/pid_printers/pid_printer.py").inheritIO().start();
 
     cProcess.waitFor();
     javaProcess.waitFor();
