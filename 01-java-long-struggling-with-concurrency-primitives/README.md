@@ -88,11 +88,9 @@ As software engineers, our responsibilities are:
 
 ---
 
-## The Hardware Context: How Parallelism Evolved
+## Software + Hardware = Cost of development & operations
 
-### Historical Parallelism (Pre-Multicore Era)
-
-**The Moral:** There is no need to buy more hardware to handle the same workload if we can achieve the same results
+**Statement:** There is no need to buy more hardware to handle the same workload if we can achieve the same results
 using fewer computational resources by **programming differently** or **using a different programming language**. Such
 thinking might give a competitive advantage to our business and helps to win market share (cost-wise).
 
