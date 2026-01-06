@@ -1,6 +1,6 @@
 void main(String[] args) throws InterruptedException {
     if (args.length < 1) {
-        IO.println("Usage: ConcurrencyDemo <platform|virtual> [threadCount]");
+        IO.println("Usage: ThreadBasedJavaConcurrency.java <platform|virtual> [threadCount]");
         return;
     }
 
