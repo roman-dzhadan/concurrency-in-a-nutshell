@@ -14,7 +14,7 @@ nvim /tmp/concurrency-in-a-nutshell/08-live-demos-and-quizzes/pid_printers/pid_p
 java /tmp/concurrency-in-a-nutshell/08-live-demos-and-quizzes/pid_printers/pid_printer.java
 
 nvim /tmp/concurrency-in-a-nutshell/08-live-demos-and-quizzes/pid_printers/pid_printer.py
-python /tmp/concurrency-in-a-nutshell/08-live-demos-and-quizzes/pid_printers/pid_printer.py
+python3 /tmp/concurrency-in-a-nutshell/08-live-demos-and-quizzes/pid_printers/pid_printer.py
 
 ls -l /proc/XXXX/exe
 ```
